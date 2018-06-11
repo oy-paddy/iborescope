@@ -50,16 +50,16 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <audio src="许嵩 - 我乐意.mp3" autoplay="autoplay"></audio>
+            <audio id="playmusic" src="许嵩 - 我乐意.mp3" autoplay="autoplay"></audio>
         </div>
-		<input type="button" onclick="duihua()" value="点击关注微信公众号" />
+		<input type="button" onclick="duihua()" value="关注微信公众号" />
     <script>
 	function duihua()
 		{
 
 
- 		autoplay.load(); // iOS 9
-    		autoplay.play(); // iOS 7/8 仅需要 play 一下
+ 		playmusic.load(); // iOS 9
+    		playmusic.play(); // iOS 7/8 仅需要 play 一下
 		alert("微信公众号：jhxsxc")
 		}
     </script>
