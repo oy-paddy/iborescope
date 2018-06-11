@@ -50,21 +50,23 @@
                 </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>
-            <audio id="playmusic" src="许嵩 - 我乐意.mp3" autoplay="autoplay"></audio>
+            <audio id="playmusic" src="许嵩 - 我乐意.mp3" ></audio>
         </div>
 		<input type="button" onclick="duihua()" value="关注微信公众号" />
     <script>
 	function duihua()
 		{
 
- 		var audio = document.getElementById('playmusic');
-              	audio.play();
-		alert("微信公众号1：jhxsxc")
+		alert("微信公众号：jhxsxc")
 		}
     </script>
 
     <script>
     (function(){
+	
+ 	var audio = document.getElementById('playmusic');
+        audio.play();
+	    
         var canvas = $('#canvas');
 
         if (!canvas[0].getContext) {
